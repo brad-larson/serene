@@ -1,0 +1,12 @@
+web:
+  build: .
+  ports:
+    - "3000:3000"
+  env_file:
+    - .env
+postgres:
+  image: "postgres:9.4"
+  expose:
+    - "5432"
+  ports:
+    - "5432:5432"
